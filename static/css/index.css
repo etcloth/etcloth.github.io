@@ -1,0 +1,394 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.interpolation-panel .interpolation-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+  border-radius: 5px;
+}
+
+/* ETCloth content adjustments. The base file above is the Nerfies stylesheet. */
+html {
+  scroll-behavior: smooth;
+}
+
+.publication-header .hero-body {
+  padding-top: 4.5rem;
+  padding-bottom: 1.75rem;
+}
+
+.publication-title {
+  font-size: 2.8rem !important;
+  line-height: 1.18;
+  letter-spacing: -0.035em;
+  margin-bottom: 1.15rem !important;
+}
+
+.etcloth-e { color: #5a8fcb; }
+.etcloth-t { color: #4bbd72; }
+.etcloth-cloth { color: #cf6b3d; }
+
+.publication-affiliations {
+  margin-top: 0.3rem;
+  color: #555;
+}
+
+.publication-note {
+  margin-top: 0.15rem;
+  color: #777;
+}
+
+.publication-link-row {
+  padding-top: 0.65rem;
+  padding-bottom: 0;
+}
+
+.teaser .hero-body {
+  padding-top: 1.25rem;
+  padding-bottom: 2.75rem;
+}
+
+.etcloth-teaser-image,
+.method-figure img,
+.results-carousel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.etcloth-teaser-image {
+  border-radius: 3px;
+}
+
+.teaser-caption {
+  max-width: 54rem;
+  margin: 1rem auto 0;
+  color: #555;
+  line-height: 1.45;
+}
+
+.section-title {
+  font-family: 'Google Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.method-figure {
+  margin: 0;
+}
+
+.method-figure figcaption,
+.result-caption {
+  max-width: 56rem;
+  margin: 1rem auto 0;
+  color: #555;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.results-carousel .item {
+  background: #fff;
+}
+
+#BibTeX {
+  padding-top: 1.5rem;
+}
+
+#BibTeX pre {
+  border-radius: 8px;
+  background: #f4f5f7;
+  padding: 1.25rem;
+}
+
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-links {
+  margin-bottom: 0.4rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .publication-header .hero-body {
+    padding-top: 2.5rem;
+  }
+
+  .publication-title {
+    font-size: 2rem !important;
+  }
+}
+
+/* VGGT-inspired ETCloth composition: clean white sections and media-first flow. */
+.publication-header .hero-body {
+  padding-top: 4.9rem;
+  padding-bottom: 1.1rem;
+}
+
+.publication-title {
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.9rem !important;
+  font-weight: 700;
+}
+
+.publication-links .button.is-light {
+  background: #f5f5f5;
+  border: 1px solid #e2e2e2;
+  box-shadow: none;
+  color: #292929;
+}
+
+.publication-links .button.is-light:hover {
+  background: #ededed;
+  color: #111;
+}
+
+.teaser .hero-body {
+  padding-top: 1rem;
+  padding-bottom: 1.6rem;
+}
+
+.media-placeholder,
+.video-placeholder {
+  border: 1px dashed #aeb6be;
+  background: linear-gradient(135deg, #f7f8fa, #eef1f4);
+  color: #5c6670;
+}
+
+.media-placeholder {
+  aspect-ratio: 16 / 8.1;
+  min-height: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.media-placeholder-content {
+  display: flex;
+  max-width: 34rem;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  text-align: center;
+}
+
+.media-placeholder-label {
+  color: #768391;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.media-placeholder-content strong {
+  color: #28323b;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.35rem;
+}
+
+.section-compact {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.section-compact .section-title {
+  margin-bottom: 1.25rem;
+}
+
+.section-intro {
+  max-width: 46rem;
+  margin: -0.4rem auto 1.25rem;
+  color: #555;
+}
+
+.video-placeholder {
+  min-height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.video-placeholder p {
+  margin: 1rem 1rem 0;
+}
+
+#qualitative-visualization .results-carousel .item {
+  margin: 0;
+  border-color: #d6d9dc;
+  border-radius: 8px;
+}
+
+#qualitative-visualization .results-carousel img {
+  max-height: 46rem;
+  object-fit: contain;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .publication-header .hero-body {
+    padding-top: 2.6rem;
+  }
+
+  .publication-title {
+    font-size: 2rem !important;
+  }
+
+  .media-placeholder {
+    min-height: 13rem;
+  }
+}
