@@ -60,16 +60,16 @@
           <div class="column has-text-centered publication-link-row">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://github.com/ZhiyuanLu1/ETCloth" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-light">
+                <a href="https://github.com/ZhiyuanLu1/ETCloth" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
               <span class="link-block">
-                <span class="button is-normal is-rounded is-light is-static">
+                <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark" aria-label="Paper is under review">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper (Under Review)</span>
-                </span>
+                </a>
               </span>
             </div>
           </div>
@@ -100,15 +100,11 @@
 
 <section class="section section-compact" id="abstract">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 section-title">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Modeling animatable clothed humans is especially difficult for loose garments whose surfaces deviate substantially from the minimally clothed body. ETCloth augments a SMPL-X body template with an explicit garment Component to form a unified body-garment canonical support. On this support, it learns garment-related geometry and pose-dependent wrinkle displacements in a disentangled manner. A continuous diffused skinning field transfers the learned garment template coherently to posed space, while Garment-Plane and Pose-Plane representations provide feature-aligned conditions for canonical geometry and pose-dependent deformation. Experiments on synthetic and real-captured clothed-human datasets show that ETCloth produces more faithful silhouettes, cleaner local geometry, and more plausible wrinkle details for challenging loose clothing.
-          </p>
-        </div>
-      </div>
+    <h2 class="title is-3 has-text-centered section-title">Abstract</h2>
+    <div class="content has-text-justified">
+      <p>
+        Modeling animatable clothed humans is especially difficult for loose garments whose surfaces deviate substantially from the minimally clothed body. ETCloth augments a SMPL-X body template with an explicit garment Component to form a unified body-garment canonical support. On this support, it learns garment-related geometry and pose-dependent wrinkle displacements in a disentangled manner. A continuous diffused skinning field transfers the learned garment template coherently to posed space, while Garment-Plane and Pose-Plane representations provide feature-aligned conditions for canonical geometry and pose-dependent deformation. Experiments on synthetic and real-captured clothed-human datasets show that ETCloth produces more faithful silhouettes, cleaner local geometry, and more plausible wrinkle details for challenging loose clothing.
+      </p>
     </div>
   </div>
 </section>
@@ -117,13 +113,9 @@
 <section class="section section-compact" id="video">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered section-title">Video</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <div class="video-placeholder">
-          <span class="icon is-large"><i class="fas fa-play-circle fa-2x"></i></span>
-          <p>Project video will be added with the final paper release.</p>
-        </div>
-      </div>
+    <div class="video-placeholder">
+      <span class="icon is-large"><i class="fas fa-play-circle fa-2x"></i></span>
+      <p>Project video will be added with the final paper release.</p>
     </div>
     <!--
     Replace the placeholder above with the Nerfies-compatible embed below:
@@ -179,11 +171,6 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered footer-links">
-      <a class="icon-link" href="https://github.com/ZhiyuanLu1/ETCloth" target="_blank" rel="noopener" aria-label="ETCloth GitHub repository">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
