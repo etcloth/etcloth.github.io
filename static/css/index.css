@@ -284,14 +284,22 @@ html {
   color: #5c6670;
 }
 
-.teaser-video {
+.teaser-frame {
   width: 66.6667%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  height: auto;
-  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(25, 30, 38, 0.12);
+  border-radius: 14px;
   background: #000;
+  box-shadow: 0 2px 5px rgba(16, 24, 40, 0.08), 0 22px 46px rgba(16, 24, 40, 0.18);
+  transform: perspective(1400px) rotateX(1.1deg);
+  transform-origin: center top;
+}
+
+.teaser-video {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section-compact {
@@ -344,7 +352,10 @@ html {
     font-size: 2rem !important;
   }
 
-  .teaser-video {
+  .teaser-frame {
     width: 100%;
+    border-radius: 10px;
+    transform: none;
   }
+
 }
