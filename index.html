@@ -98,7 +98,7 @@
     <h2 class="title is-3 has-text-centered section-title">Abstract</h2>
     <div class="content has-text-justified">
       <p>
-        Modeling animatable clothed humans is especially difficult for loose garments whose surfaces deviate substantially from the minimally clothed body. ETCloth augments a SMPL-X body template with an explicit garment Component to form a unified body-garment canonical support. On this support, it learns garment-related geometry and pose-dependent wrinkle displacements in a disentangled manner. A continuous diffused skinning field transfers the learned garment template coherently to posed space, while Garment-Plane and Pose-Plane representations provide feature-aligned conditions for canonical geometry and pose-dependent deformation. Experiments on synthetic and real-captured clothed-human datasets show that ETCloth produces more faithful silhouettes, cleaner local geometry, and more plausible wrinkle details for challenging loose clothing.
+        Creating animatable clothed humans from static scans requires recovering the clothed surface and modeling its deformation under novel body poses, especially for loose garments such as skirts and dresses. Existing learning-based methods typically rely on minimally clothed parametric body templates. These representations often struggle to support loose garments that deviate from the body surface, making it difficult to capture fine pose-dependent wrinkles under challenging clothing. To address this limitation, we propose ETCloth, a framework that learns an explicit body-garment template for clothed human modeling. ETCloth augments the body template with an explicit garment component and establishes a unified canonical support for both body and loose-garment regions. On this support, we model garment-related deformation and pose-dependent deformation in a disentangled manner. The garment-related deformation forms a stable body-garment template with diffused skinning weights, which supports stable articulation of loose garments under novel poses. Experiments on synthetic and real-captured clothed human datasets demonstrate that ETCloth produces more faithful global silhouettes, cleaner local geometry, and more plausible wrinkle details than existing methods.
       </p>
     </div>
   </div>
@@ -127,7 +127,7 @@
     <figure class="method-figure">
       <img src="./static/images/pipeline.png" alt="Overview of the ETCloth method.">
       <figcaption>
-        ETCloth builds a unified canonical support from the SMPL-X body and an explicit garment Component. The canonical branch captures garment-related geometry, and the pose branch models compact pose-dependent residuals conditioned by Garment-Plane and Pose-Plane features.
+        Starting from the SMPL-X body template, ETCloth constructs a body-garment composition and uses the Garment-Plane Representation and Pose-Plane Representation to learn vertex-aligned garment-related and final pose features &phi;<sub>g</sub> and &phi;<sub>p</sub>. For an arbitrary point <i>p</i><sup>c</sup><sub>i</sub> on the body-garment composition surface, its features are obtained by barycentric interpolation and fed into two decoders. The garment decoder predicts the garment-related canonical displacement to establish a body-garment template, while the pose decoder predicts the pose-dependent wrinkle displacement on the template surface. The final deformed points are mapped to the posed space with LBS to obtain the clothed human point cloud.
       </figcaption>
     </figure>
   </div>
@@ -137,7 +137,7 @@
 <section class="section section-compact" id="qualitative-visualization">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered section-title">Qualitative Visualization</h2>
-    <p class="has-text-centered section-intro">Qualitative results on synthetic ReSynth and real-captured THUCloth data.</p>
+    <p class="has-text-centered section-intro">Qualitative results on synthetic ReSynth and real-captured THuman-CloSET data. We further replace the canonical template of Animatable Gaussians with our template, which better preserves dress silhouettes and local folds on THuman-CloSET and ActorsHQ.</p>
     <div id="results-carousel" class="carousel results-carousel">
       <div class="item">
         <img src="./static/images/qualitative_comparison_resynth.png" alt="Qualitative comparisons on ReSynth.">
@@ -146,7 +146,7 @@
         <img src="./static/images/qualitative_comparison_thumancloset.png" alt="Qualitative comparisons on THuman-CloSET.">
       </div>
       <div class="item">
-        <img src="./static/images/ag_thuclothactor.png" alt="Qualitative results on THUCloth actors.">
+        <img src="./static/images/ag_thuclothactor.png" alt="Animatable Gaussians results after replacing its canonical template with ETCloth on THuman-CloSET and ActorsHQ.">
       </div>
     </div>
   </div>
