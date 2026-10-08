@@ -221,7 +221,14 @@ html {
   margin: 0;
 }
 
-.method-figure figcaption,
+.method-figure figcaption {
+  max-width: none;
+  margin: 1rem 0 0;
+  color: #555;
+  line-height: 1.55;
+  text-align: left;
+}
+
 .result-caption {
   max-width: 56rem;
   margin: 1rem auto 0;
@@ -312,8 +319,8 @@ html {
 }
 
 .section-intro {
-  max-width: 46rem;
-  margin: -0.4rem auto 1.25rem;
+  max-width: none;
+  margin: -0.4rem 0 1.25rem;
   color: #555;
 }
 
